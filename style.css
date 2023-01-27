@@ -1,0 +1,18 @@
+.test{
+    background-color:  red;
+    font-size: 18pt;
+    color: white;
+}
+
+.test:hover{
+    background-color:  blue;
+    color: white;
+
+}
+
+.test-active{
+    background-color: green;
+    color: white;
+    font-size: 30pt;
+
+}

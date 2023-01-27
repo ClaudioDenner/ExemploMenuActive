@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo menu com Active</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!--
+        # Pegue cada item do seu menu e adcione a propriedade id
+        # adicione o mesmo id para cada item do seu menu
+
+        #adicione também a propriedade onclick e atribua a ela a  função activer que 
+        criaremos logo abaixo com javascript
+
+        #passe como parâmetro um numero para a função activer em órdem crescente, começando com zero
+        #esses números são os índices do array que irá guardar cada item do menu com mesmo id
+
+        #se o seu menu tiver mais itens, basta seguir o padrão, adicionando o mesmo id para os outros
+        # e passando como parâmetro o respectivo índice na função activer
+
+    -->
+
+    <ul>
+        <li><a href="#" class="test" id="itemMenu" onclick="activer(0)">TesteA</a></li>
+        <li><a href="#" class="test" id="itemMenu" onclick="activer(1)">TesteB</a></li>
+        <li><a href="#" class="test" id="itemMenu" onclick="activer(2)">TesteC</a></li>
+
+
+
+
+    </ul>
+
+
+    <ol>
+        <li>Exiba o código fonte, deixei as instruções comentadas no arquivo</li>
+        <li>Se atente também ao arquivo css</li>
+    </ol>
+
+
+
+
+    <!--
+        
+
+        #Copie, cole essa tag script
+        
+
+    -->
+    
+
+    <script>
+        
+        var a = document.querySelectorAll('#itemMenu')
+        
+        function activer(indice){
+
+            
+            a.forEach(element=>element.classList.remove("test-active"))// # altere para o nome da sua classe responsável pelo active
+
+            a[indice].classList.add("test-active")//  # altere aqui também 
+        }
+        
+
+
+    </script>
+
+    <!-- #seja feliz -->
+</body>
+</html>
